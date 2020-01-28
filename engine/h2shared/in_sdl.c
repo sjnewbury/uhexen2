@@ -28,7 +28,7 @@
 
 
 #if SDLQUAKE == 2
-extern SDL_Window *screen;
+extern SDL_Window *window;
 #endif
 
 static qboolean	prev_gamekey;
