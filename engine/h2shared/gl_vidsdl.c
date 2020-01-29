@@ -118,7 +118,7 @@ static attributes_t	vid_attribs;
 
 #if SDLQUAKE == 2
 SDL_Window	*window;
-SDL_GLContext glcontext;
+static SDL_GLContext glcontext;
 #else
 static const SDL_VideoInfo	*vid_info;
 static SDL_Surface	*screen;
