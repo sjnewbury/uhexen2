@@ -2062,7 +2062,11 @@ void VID_ToggleFullscreen (void)
 	else
 	{
 		fs_toggle_works = false;
+#if SDLQUAKE == 2
+		Con_Printf ("SDL_SetWindowFulscreen failed\n");
+#else
 		Con_Printf ("SDL_WM_ToggleFullScreen failed\n");
+#endif
 	}
 }
 
